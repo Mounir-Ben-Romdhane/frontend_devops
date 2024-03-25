@@ -1,0 +1,21 @@
+<!-- src/app/read/read.component.html -->
+
+<h2>Universities List</h2>
+
+<button (click)="goToAdd()">Add University</button>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let university of universities">
+    <td>{{ university.nomUniversite }}</td>
+    <td>{{ university.adresse }}</td>
+    <td>
+      <button (click)="goToUpdate(university.idUniversite)">Update</button>
+      <button (click)="delete(university.idUniversite)">Delete</button>
+    </td>
+  </tr>
+</table>
