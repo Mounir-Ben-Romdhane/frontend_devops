@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class UniversityService {
 
-  private baseUrl = 'http://192.168.1.11:8087/universite';
+  private baseUrl = 'http://172.20.10.2:8087/universite';
 
   constructor(private http: HttpClient) { }
 
